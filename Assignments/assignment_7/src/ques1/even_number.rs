@@ -1,4 +1,4 @@
-/// number function check the number is "Even and Odd".
+/// number function check the number is "Even".
 ///
 /// #Arguments
 ///
