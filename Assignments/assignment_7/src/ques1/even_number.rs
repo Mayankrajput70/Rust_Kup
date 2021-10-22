@@ -6,7 +6,7 @@
 ///
 /// #Return
 ///
-/// return : return handle error and use value.
+/// return handle error and use value.
 pub fn number(value: i32) -> Result<String, String> {
     if value % 2 == 0 {
         Ok("Even".to_string())
@@ -22,7 +22,7 @@ pub fn number(value: i32) -> Result<String, String> {
 ///
 /// #Return
 ///
-/// return : return handle error and give output String.
+/// return handle error and give output String.
 pub fn number_test(value: i32) -> String {
     let result = number(value);
 
