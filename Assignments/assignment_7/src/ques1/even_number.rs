@@ -2,33 +2,33 @@
 ///
 /// #Arguments
 ///
-/// value : value object check the condition.
+/// value : value is a integer type input number whose use to check even or not.
 ///
 /// #Return
 ///
-/// return handle error and use value.
+/// Result enum which is used to handle error and value.
 pub fn number(value: i32) -> Result<String, String> {
     if value % 2 == 0 {
         Ok("Even".to_string())
     } else {
-        Err("Not ever".to_string())
+        Err("Not even".to_string())
     }
 }
 /// number_test function check the value object.
 ///
 /// #Arguments
 ///
-/// result : result control the number-value
+/// result : result is a integer type input number whose use to check even.
 ///
 /// #Return
 ///
-/// return handle error and give output String.
+/// return String type which handle error.
 pub fn number_test(value: i32) -> String {
     let result = number(value);
 
     match result {
         Ok(result) => result,
 
-        Err(_) => "Error".to_string(),
+        Err(_) => "Invalid".to_string(),
     }
 }

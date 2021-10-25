@@ -3,22 +3,27 @@ pub mod test {
     use crate::ques1::even_number::number_test;
 
     #[test]
-    pub fn test1() {
-        assert_eq!(number_test(4), "Even");
-    }
-
-    #[test]
-   pub fn test2() {
-        assert_ne!(number_test(0), "Odd");
+    fn check_even_success_first() {
+        assert_eq!(number_test(98), "Even");
     }
     #[test]
-    pub fn test3() {
-
-        assert_ne!(number_test(5), "Even");
+    fn check_even_success_second() {
+        assert_eq!(number_test(-14), "Even");
     }
-
     #[test]
-    pub fn test4() {
-        assert_ne!(number_test(-33), "Even");
+    fn check_even_failure_first() {
+        assert_eq!(number_test(3), "Invalid");
+    }
+    #[test]
+    fn check_even_failure_second() {
+        assert_eq!(number_test(7), "Invalid");
+    }
+    #[test]
+    fn check_even_success_third() {
+        assert_eq!(number_test(0), "Even");
+    }
+    #[test]
+    fn check_even_failure_third() {
+        assert_eq!(number_test(-25), "Invalid");
     }
 }
