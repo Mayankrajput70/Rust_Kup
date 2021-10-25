@@ -3,22 +3,22 @@ pub mod test {
     use crate::ques1::even_number::number_test;
 
     #[test]
-    pub fn test1() {
+    pub fn number_test_Success() {
         assert_eq!(number_test(4), "Even");
     }
 
     #[test]
-   pub fn test2() {
+   pub fn number_fail() {
         assert_ne!(number_test(0), "Odd");
     }
     #[test]
-    pub fn test3() {
+    pub fn number_test_success_() {
 
         assert_ne!(number_test(5), "Even");
     }
 
     #[test]
-    pub fn test4() {
+    pub fn number_test_fail_() {
         assert_ne!(number_test(-33), "Even");
     }
 }
