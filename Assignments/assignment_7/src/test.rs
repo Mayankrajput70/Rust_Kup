@@ -12,13 +12,13 @@ pub mod test {
         assert_ne!(number_test(0), "Odd");
     }
     #[test]
-    pub fn number_test_success_() {
+    pub fn number_test_fail_() {
 
         assert_ne!(number_test(5), "Even");
     }
 
     #[test]
-    pub fn number_test_fail_() {
+    pub fn number_test_fail__() {
         assert_ne!(number_test(-33), "Even");
     }
 }
