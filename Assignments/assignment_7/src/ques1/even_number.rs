@@ -1,12 +1,12 @@
-/// number function check the number is "Even".
+/// number function is used to check a given input number is even or not
 ///
 /// #Arguments
 ///
-/// value : value is a integer type input number whose use to check even or not.
+/// value : value is a i32 integer type input number whose use to check even or not
 ///
 /// #Return
 ///
-/// Result enum which is used to handle error and value.
+/// return result enum which is used to handle error and value
 pub fn number(value: i32) -> Result<String, String> {
     if value % 2 == 0 {
         Ok("Even".to_string())
@@ -14,15 +14,15 @@ pub fn number(value: i32) -> Result<String, String> {
         Err("Not even".to_string())
     }
 }
-/// number_test function check the value object.
+/// number_test function is used handle response of calling function.
 ///
 /// #Arguments
 ///
-/// result : result is a integer type input number whose use to check even.
+/// value : value is a i32 integer type input number whose use to check even or not with handle error and value
 ///
 /// #Return
 ///
-/// return String type which handle error.
+/// return String which handle error and value of output of function.
 pub fn number_test(value: i32) -> String {
     let result = number(value);
 
