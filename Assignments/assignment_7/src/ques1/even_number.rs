@@ -11,7 +11,7 @@ pub fn number(value: i32) -> Result<String, String> {
     if value % 2 == 0 {
         Ok("Even".to_string())
     } else {
-        Err("Not ever".to_string())
+        Err("Not even".to_string())
     }
 }
 /// number_test function check the value object.
@@ -22,7 +22,7 @@ pub fn number(value: i32) -> Result<String, String> {
 ///
 /// #Return
 ///
-/// return handle error and give output String.
+/// return handle error and give String type.
 pub fn number_test(value: i32) -> String {
     let result = number(value);
 
