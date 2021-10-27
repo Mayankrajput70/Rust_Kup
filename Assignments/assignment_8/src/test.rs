@@ -47,6 +47,18 @@ pub mod test {
             Err("Invalid input".to_string())
         );
     }
+     #[test]
+    fn iterator_success__() {
+        let mut geometric_progression = GeometricSeries {
+            first_number: 1,
+            current_number: 0,
+            ratio: 1,
+        };
+        assert_eq!(
+            geometric_progression.geometric_series(12).unwrap(),
+            vec![0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        );
+    }
     #[test]
     fn iterator_success() {
         let mut geometric_progression = GeometricSeries {
