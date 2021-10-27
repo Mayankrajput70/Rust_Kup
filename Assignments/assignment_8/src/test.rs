@@ -55,12 +55,12 @@ pub mod test {
             ratio: 1,
         };
         assert_eq!(
-            geometric_progression.geometric_series(12).expect("good"),
+            geometric_progression.geometric_series(12).expect("Not good"),
             vec![0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         );
     }
     #[test]
-    fn iterator_success() {
+    fn iterator_fail() {
         let mut geometric_progression = GeometricSeries {
             first_number: 1,
             current_number: 1,
