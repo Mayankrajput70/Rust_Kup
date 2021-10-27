@@ -55,7 +55,7 @@ pub mod test {
             ratio: 1,
         };
         assert_eq!(
-            geometric_progression.geometric_series(12).unwrap(),
+            geometric_progression.geometric_series(12).expect("good"),
             vec![0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         );
     }
